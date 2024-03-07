@@ -18,8 +18,7 @@ var serializerOptions = new JsonSerializerOptions
     PropertyNameCaseInsensitive = false,
     PropertyNamingPolicy = JsonNamingPolicy.CamelCase
 };
-var items = JsonSerializer.Deserialize<IEnumerable<Item>>(resultString, serializerOptions)
-    ?.ToList();
+var items = JsonSerializer.Deserialize<IEnumerable<Item>>(resultString, serializerOptions);
 
 ArgumentNullException.ThrowIfNull(items);
 
