@@ -33,10 +33,10 @@ internal struct Item
 
     public override string ToString()
     {
-        return $$"""
-                 id : {{Id}},
-                 name:{{Name}},
-                 quality:{{Quality}}
+        return $"""
+                 id : {Id},
+                 name:{Name},
+                 quality:{Quality}
                  """;
     }
 }
